@@ -1,0 +1,23 @@
+
+#sidenav-overlay {
+    background-color: transparent;
+}
+
+ .footercolr{background-color:#001C33;
+          
+        }
+
+ .copyrightcolr{
+          background-color:#0E3F66;
+        }
+  .topnavcolr{
+          background-color:#001C33; 
+        }
+  .sidenavcolr{
+          background-color:#002A4D; 
+          }  
+
+#fade{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
