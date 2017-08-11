@@ -12,7 +12,17 @@
       <style type="text/css">
       body{
 
-        background-image: url('https://zellox.com/wp-content/uploads/2016/05/website-backgrounds-%E2%80%AB289855825%E2%80%AC-%E2%80%AB%E2%80%AC.jpg')
+        background-image: url('http://res.cloudinary.com/kabateizi/image/upload/v1502373350/website-backgrounds-_E2_80_AB289855825_E2_80_AC-_E2_80_AB_E2_80_AC_ybw41a.jpg')
+      }
+      .modal {
+        max-width: 55%;
+        left: 0;
+         right: 0;
+ -        top: 0;
+ +      top: 10%;
+        margin: auto;
+        overflow-y: auto;
+        border-radius: 2px;}
       }
 
       </style>
@@ -34,28 +44,28 @@
         <div class="slider">
     <ul class="slides">
       <li>
-        <img src="http://theplaylist.net/wp-content/uploads/2016/11/most-anticipated-2017-star-wars-episode-8-pta-daniel-daylewis-terrence-malick-weightless-kongskullsiland-wonder-woman-john-wick-2-alien-covenant-warapes.jpg" alt="ty" > <!-- random image -->
-        <div class="caption center-align">
+        <img src="http://res.cloudinary.com/kabateizi/image/upload/v1502373612/most-anticipated-2017-star-wars-episode-8-pta-daniel-daylewis-terrence-malick-weightless-kongskullsiland-wonder-woman-john-wick-2-alien-covenant-warapes_xd6zno.jpg">
+          <div class="caption center-align">
           <h3>Keep track of all the latest movies!</h3>
           <h5 class="light grey-text text-lighten-3">Can't wait.</h5>
         </div>
       </li>
       <li>
-        <img src="http://cdn5.thr.com/sites/default/files/imagecache/list_landscape_960x541/2016/12/upcoming_animated_movies_split.jpg"> <!-- random image -->
+        <img src="http://res.cloudinary.com/kabateizi/image/upload/v1502373754/upcoming_animated_movies_split_f24q3l.jpg">
         <div class="caption left-align">
           <h3>Do not miss out on all your favorite animations</h3>
           <h5 class="light grey-text text-lighten-3">I love this!</h5>
         </div>
       </li>
       <li>
-        <img src="https://www.ablogofthrones.com/wp-content/uploads/2016/11/Season-7-Posters-FEAT-750x480.jpg"> <!-- random image -->
+        <img src="http://res.cloudinary.com/kabateizi/image/upload/v1502373755/Season-7-Posters-FEAT-750x480_fzuiva.jpg">
         <div class="caption right-align">
           <h3>As for the thriller tv serie that keeps you on your toes!</h3>
           <h5 class="light grey-text text-lighten-3">Don't lose sight!</h5>
         </div>
       </li>
       <li>
-        <img src="http://fortlee.bccls.org/images/ya.jpg"> <!-- random image -->
+        <img src="http://res.cloudinary.com/kabateizi/image/upload/v1502375963/books_zrmws4.jpg"> <!-- random image -->
         <div class="caption center-align">
           <h3>Sit back and read your fav book.</h3>
           <h5 class="light grey-text text-lighten-3">How comforting!</h5>
@@ -63,7 +73,7 @@
       </li>
 
      <li>
-        <img src="http://assets4.capitalfm.com/2017/13/little-mix---no-more-sad-songs-music-video-1490854795-list-handheld-0.png"> <!-- random image -->
+        <img src="http://res.cloudinary.com/kabateizi/image/upload/v1502373769/little-mix---no-more-sad-songs-music-video-1490854795-list-handheld-0_h82xca.png"> <!-- random image -->
         <div class="caption right-align">
           <h3>That music that soothes the soul</h3>
           <h5 class="light grey-text text-lighten-3">Brightening your day!</h5>
@@ -84,32 +94,36 @@
           <h4 class="center-align"> Sign Up </h4>
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
+          <input id="first_name" type="text" class="validate" required>
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+          <input id="last_name" type="text" class="validate" required>
           <label for="last_name">Last Name</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="username" type="text" class="validate">
+          <input id="username" type="text" class="validate" required>
           <label for="username">Username</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate" required>
           <label for="email">Email</label>
         </div>
         </div>
         <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
+          <input id="password" type="password" class="validate" required>
           <label for="password">Password</label>
         </div>
       </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
       
 
       <a class="hoverable modal-trigger" href="#modal1">Already a member! Sign In.</a>
@@ -120,21 +134,23 @@
         
       <div class="row">
         <div class="input-field col s12">
-          <input id="username" type="text" class="validate">
+          <input id="username" type="text" class="validate" required>
           <label for="username">Username</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="text" class="validate">
+          <input id="password" type="text" class="validate" required>
           <label for="password">Password</label>
         </div>
       </div>
     </form>
   </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Log In</a>
+      <button class="btn waves-effect waves-light btn-flat" type="submit" name="action">Log In
+        </button>
+      <!--a class="modal-action modal-close waves-effect waves-green btn-flat" type="submit" name="action">Log In</a-->
     </div>
   </div>
     
@@ -200,29 +216,29 @@
           <h4 class="center-align"> Sign Up </h4>
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
+          <input id="first_name" type="text" class="validate" required>
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+          <input id="last_name" type="text" class="validate" required>
           <label for="last_name">Last Name</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="username" type="text" class="validate">
+          <input id="username" type="text" class="validate" required>
           <label for="username">Username</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validate" required>
           <label for="email">Email</label>
         </div>
         </div>
         <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
+          <input id="password" type="password" class="validate" required>
           <label for="password">Password</label>
         </div>
       </div>
@@ -236,14 +252,14 @@
         
       <div class="row">
         <div class="input-field col s12">
-          <input id="username" type="text" class="validate">
+          <input id="username" type="text" class="validate" required>
           <label for="username">Username</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="text" class="validate">
+          <input id="password" type="text" class="validate" required>
           <label for="password">Password</label>
         </div>
       </div>
@@ -267,7 +283,7 @@
 
   
 
-
+      <div class="height:800px"></div>
       
 
       
@@ -281,6 +297,33 @@
 
         //init modal
         $('.modal').modal();
+
+        //init modal responsiveness
+        $(".modal").height($(".modal").height());
+         $(".modal").width($(".modal").width()); 
+
+          $('#lean_overlay').css({ 'display' : 'block', opacity : 0 });
+  
+              $('#lean_overlay').fadeTo(200, o.overlay);
+ // -                  
+ // -                $(".modal").height($(".modal").height());
+ // -                $(".modal").height($(".modal").var modal_height = $(modal_id).outerHeight();
+ // -              $(".modal").height($(".modal").var modal_width = $(modal_id).outerWidth();
+ -                  
+ +//                
+ +//                var modal_height = $(modal_id).outerHeight();
+ +//              var modal_width = $(modal_id).outerWidth();
+ +//                  
+              $(modal_id).css({ 
+              
+                'display' : 'block',
+                'position' : 'fixed',
+                'opacity' : 0,
+                     'bottom' : '15%',
+                'z-index': 1000
+                });
+              //    var modal_height = $(modal_id).outerHeight();
+              // var modal_width = $(modal_id).outerWidth();
 
         //init parallax
         $('.parallax').parallax();
